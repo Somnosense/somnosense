@@ -37,23 +37,129 @@
         <div class="product-section">
         <div class="product-text">
             <b>SomnoSense is an intraoral biophysical sensor system designed to enable comfortable, accurate, and scalable at-home sleep apnea screening. By measuring both physical and biochemical changes directly within the oral environment, SomnoSense addresses critical gaps left by existing diagnostic methods.</b>
+            <br>
+            <br>
+
             <p>Our system integrates:</p>
             <ul>
             <li>A low-cost disposable intraoral patch</li>
             <li>A reusable electronics module (prototype stage)</li>
-            <li>A smartphone or computer-based applicatio</li>
+            <li>A smartphone or computer-based application</li>
             <li>A future-ready AI-driven analysis pipeline</li>
             </ul>
             <p>Together, these components transform complex overnight sleep studies into a non-invasive, accessible, and physiologically grounded diagnostic experience.</p>
+            
+            <br>
+            <br>
+            <h2 class = "header">The Problem We Address</h2>
+            <p>Sleep apnea affects over one billion people worldwide, yet 80–90% of cases remain undiagnosed. Current diagnostic pathways suffer from major limitations:
+            </p>
+            <ul>
+                <li>Polysomnography (PSG) is accurate but expensive, uncomfortable, and difficult to scale.</li>
+                <li>Home sleep tests (HSTs) improve convenience but rely on limited signals and often underestimate disease severity.</li>
+                <li>Consumer wearables lack clinical reliability and physician acceptance.</li>
+                <li>A key limitation shared across these approaches is the neglect of the oral environment, despite the fact that airflow obstruction directly alters humidity, gas exchange, and saliva chemistry inside the mouth.</li>
+            </ul>
+            <b>SomnoSense fills this gap.</b>
+        
+            <br>
+            <br>
+            <br>
+            <h2 class = "header">Our Solution</h2>
+            <p>SomnoSense is a flexible, biocompatible intraoral patch designed to rest comfortably along the hard palate or inner oral surface. It detects sleep apnea by combining:</p>
+            <ul>
+                <li>Physical sensing: airflow-related changes in oral humidity and temperature</li>
+                <li>Biochemical sensing: saliva pH shifts associated with impaired ventilation and carbon dioxide accumulation</li>
+            </ul>
+            <p>To our knowledge, SomnoSense is the first at-home sleep apnea system designed to integrate both physical and biochemical data sources in a single intraoral device.</p>
+            <br>
+            <br>
+            <h2 class = "header">System Overview</h2>
+            <b>1. Intraoral Patch (Disposable)</b>
+            <ul>
+                <li>Anatomically contoured for secure, comfortable placement</li>
+                <li>Designed for overnight wear with minimal user burden</li>
+                <li>Houses sensing regions for humidity and biochemical monitoring</li>
+                <li>Future versions will be fabricated from medical-grade silicone or hydrogel for enhanced biocompatibility</li>
+                <li>In the current prototype stage, the patch form factor is demonstrated using a modified mouthguard to validate core sensing mechanisms.</li>
+            </ul>
+            <b>2. Electronics Module (Reusable – Prototype Stage)</b>
+            <ul>
+                <li>Interfaces with the intraoral patch during testing and validation</li>
+                <li>Collects high-resolution humidity and temperature data</li>
+                <li>Enables rapid prototyping, iteration, and signal verification
+                </li>
+                <li>This modular approach allows the core physiology to be validated first, before full miniaturization into a single integrated patch.</li>
+            </ul>
+            <b>3. Smartphone / Computer Application</b>
+            <p>All sensor data is transmitted to a companion application that:</p>
+            <ul>
+                <li>Displays real-time and overnight signal trends
+                </li>
+                <li>Identifies apnea and hypopnea events</li>
+                <li>Produces a composite sleep quality score</li>
+            </ul>
+            <p>Future versions will incorporate synchronized biochemical inputs and AI-based classifiers to generate clinically meaningful outputs such as an estimated Apnea-Hypopnea Index (AHI).</p>
+
+            <br>
+            <br>
+            <h2 class="header">Our Technology</h2>
+            <p>SomnoSense’s core innovation lies in dual-signal convergence.</p>
+            <b>Physical Signal: Oral Humidity & Temperature</b>
+            <p>During normal breathing, airflow produces stable, rhythmic humidity oscillations.
+
+                During apnea events, airflow obstruction causes a sharp, measurable drop in oral humidity.
+                
+                This provides a reliable surrogate for airflow interruption.</p>
+            <b>Biochemical Signal: Saliva pH</b>
+            <p>Impaired ventilation leads to carbon dioxide accumulation, altering saliva chemistry.
+
+                These changes produce a detectable shift in saliva pH, which reverses when breathing resumes.
+                
+                By requiring both signals to change in coordination, SomnoSense increases diagnostic confidence beyond single-signal systems.</p>
+
+            <br>
+            <br>
+            <h2 class="header">Prototype Validation</h2>
+            <p>We validated the feasibility of this approach through a functional prototype:</p>
+            <p>An Arduino-based system was embedded into a mouthguard platform and
+
+                tested under simulated oral conditions.
+                
+                Controlled breathing trials demonstrated
+                
+                clear humidity drops during airflow interruption and
+                
+                rapid signal recovery upon resumed breathing.
+                
+                Saliva pH is currently demonstrated using a pH indicator strip as a biochemical proxy, with a clear and feasible pathway toward future electronic pH integration.
+                
+                This phased validation strategy reduces technical risk while preserving scalability.</p>
+
+
+            <br>
+            <br>
+            <h2 class="header">Data Processing & AI Pipeline
+            </h2>
+            <p>Sensor data collected overnight is processed through a proprietary analysis pipeline that:</p>
+            <ul>
+                <li>Identifies synchronized signal deviations</li>
+                <li>Filters noise and artifacts</li>
+                <li>Aggregates events across sleep cycles</li>
+                <li>Converts raw data into clinician-relevant metrics</li>
+            </ul>
+            <p>The creation of a paired humidity–pH dataset forms a unique and defensible data ecosystem that can be continuously refined through clinical trials and real-world use.</p>
+
+            <br>
+            <br>
+            <b class="endtext">By transforming sleep apnea screening from a costly, uncomfortable lab procedure into a simple at-home experience, SomnoSense has the potential to dramatically increase diagnosis rates, enable earlier intervention, and improve long-term health outcomes for millions.
+
+                SomnoSense represents a new class of intraoral biophysical diagnostics, bridging the gap between consumer wearables and clinical-grade sleep testing.</b>
         </div>
-        <div class="product-image">
-            <img src="prototype.png" alt="image">
-        </div>
+        
         </div>
     </div>
-    <div class="model-image">
-        <img src="model.png" alt="image">
-    </div>
+  
     <script>
         function openMenu() {
           document.getElementById("side-menu").classList.add("open");

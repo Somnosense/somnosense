@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stakeholders</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Minimal Menu Button -->
+<header class="header">
+    <button class="menu-button" onclick="openMenu()">
+      <span class="dots">⋮</span>
+      <span class="menu-text">Menu</span>
+    </button>
+  </header>
+  
+  <!-- Side Menu -->
+  <nav id="side-menu" class="side-menu">
+    <div class="side-menu-header">
+      <img src="logo.png" alt="Somnosense logo" class="logo">
+      <button class="close-button" onclick="closeMenu()">×</button>
+    </div>
+  
+    <a href="index.html">Home</a>
+    <a href="page1.html">About Us</a>
+    <a href="page2.html">Product</a>
+    <a href="page3.html">Market and Impact</a>
+    <a href="page4.html">Stakeholders</a>
+  </nav>
+  
+  <!-- Overlay -->
+  <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+  
+
+  <div class="container">
+    <h1>Strategic Partnerships</h1>
+    <p>SomnoSense is positioned to benefit from partnerships across both healthcare and research ecosystems.</p>
+    <b>We aim to collaborate with:</b>
+    <ul>
+        <li>Sleep clinics and pulmonology practices for clinical validation and pilot testing</li>
+        <li>Academic research institutions for data refinement and algorithm development</li>
+        <li>Digital health platforms and telemedicine providers for future deployment</li>
+    </ul>
+    <br>
+    <b>These partnerships allow SomnoSense to:</b>
+    <ul>
+        <li>Validate performance against existing diagnostic standards</li>
+        <li>Build clinical credibility prior to large-scale rollout</li>
+        <li>Integrate smoothly into existing healthcare workflows</li>
+    </ul>
+    <br>
+    <br>
+    <h2 class="header">Financial Approach</h2>
+    <p>SomnoSense follows a capital-efficient development strategy, minimizing early-stage costs while maximizing proof-of-concept value.</p>
+    <p>Key cost considerations include:</p>
+    <ul>
+        <li>Prototype development and materials</li>
+        <li>Sensor integration and miniaturization research</li>
+        <li>Software and data analysis infrastructure</li>
+        <li>Clinical validation and regulatory preparation</li>
+    </ul>
+    <br>
+    <p>Rather than immediate mass manufacturing, early funding is directed toward technical validation, clinical alignment, and intellectual property protection, reducing investor risk.
+
+        Revenue Pathways (Future-Oriented)</p>
+    <br>
+    <b>While SomnoSense is currently in the validation stage, future revenue models include:</b>
+    <ul>
+        <li>Sale of disposable intraoral patches paired with reusable electronics</li>
+        <li>Subscription-based software analytics for clinicians or health platforms</li>
+        <li>Licensing of proprietary pH–humidity datasets and AI classifiers for research and industry use</li>
+    </ul>
+
+    <p>This diversified model allows for flexibility as regulatory and clinical pathways evolve.
+    </p>
+
+    <h2 class="header">Development Phases</h2>
+    <p>To ensure disciplined growth, SomnoSense is structured around a phased roadmap:</p>
+    <b>Phase 1 — Proof of Concept (Current)</b>
+    <ul>
+        <li>Arduino-based prototype validation</li>
+        <li>Demonstration of humidity-based apnea detection</li>
+        <li>Conceptual biochemical sensing validation</li>
+    </ul>
+    <b>Phase 2 — Integration & Miniaturization</b>
+    <ul>
+        <li>Electronic pH sensor integration</li>
+        <li>Miniaturized intraoral patch development</li>
+        <li>Expanded data collection</li>
+    </ul>
+    <b>Phase 3 — Clinical Validation</b>
+    <ul>
+        <li>Pilot studies in controlled environments</li>
+        <li>Comparison to polysomnography benchmarks</li>
+        <li>Algorithm refinement</li>
+    </ul>
+    <b>Phase 4 — Regulatory & Deployment Preparation</b>
+    <ul>
+        <li>Regulatory strategy development</li>
+        <li>Manufacturing feasibility studies</li>
+        <li>Strategic healthcare partnerships</li>
+    </ul>
+    <b>Each phase is designed to build upon prior validation, ensuring that capital investment directly supports measurable progress.</b>
+    <br>
+    <br>
+    <h2 class="header">Investor Value Proposition</h2>
+    <p>For investors, SomnoSense offers:</p>
+    <ul>
+        <li>Entry into a large, underdiagnosed medical market
+        </li>
+        <li>A product designed for recurring revenue and scalability
+        </li>
+        <li>A defensible position built on physiological data integration and intellectual property</li>
+        <li>A disciplined, low-risk approach focused on validation before expansion</li>
+    </ul>
+    <b>SomnoSense represents an opportunity to support a medically relevant innovation with clear technical grounding and a realistic path toward impact.</b>
+  </div>
+  <script>
+    function openMenu() {
+      document.getElementById("side-menu").classList.add("open");
+      document.getElementById("overlay").classList.add("show");
+    }
+
+    function closeMenu() {
+      document.getElementById("side-menu").classList.remove("open");
+      document.getElementById("overlay").classList.remove("show");
+    }
+  </script>
+</body>
+</html>

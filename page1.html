@@ -35,32 +35,59 @@
 
   <div class="container">
     <h1>About Us</h1>
-    <b>Rebecca Ding</b>
-    <br>
-    <b>CEO</b>
-    <p>Rebecca’s passions lie in marketing and economics, and she participates in DECA in Silicon Valley. As the CEO of CtrlZZZ, she supervises all parts of the team’s functions, making sure the project runs smoothly.</p>
-    <br>
-    <b>Jasmine Zheng</b>
-    <br>
-    <b>CSE</b>
-    <p>Jasmine is passionate about neuroscience and psychology, joining CtrlZZZ to further her knowledge on sleep-related neural functions. As the chief sensor engineer of the team, she is in charge of designing the 3D model of the sensor. </p>
-    <br>
-    <b>Kevin Chen</b>
-    <br>
-    <b>COO</b>
-    <br>
-    <p>Kevin loves all things STEM, especially physics and chemistry, participating in Science Olympiad and DECA in Texas. As the COO of CtrlZZZ, he oversees sensor prototype production and assembly. In his free time, he enjoys playing video games even though he is bad at them. </p>
-    <br>
-    <b>Ashley Fang</b>
-    <br>
-    <b>CTO</b>
-    <p>Ashley’s interests lie in computer science, math, and biology, participating in FRC robotics and research in Southern California. As the CTO of CtrlZZZ, she leads app development and website design.</p>
-    <br>
-    <b>Aiden Sha</b>
-    <br>
-    <b>CM</b>
-    <p>Aiden, who is from New York, is interested in computer science and research, participating in summer research projects at SBU. As the CM in CtrlZZZ, he is responsible for overseeing the exact business functions.</p>
+  
+    <div class="team-member">
+      <img src="rebecca.png" alt="Rebecca Ding">
+      <div class="member-text">
+        <h2>Rebecca Ding - CEO</h2>
+        <p>Rebecca’s passions lie in marketing and economics, and she participates in DECA in Silicon Valley. As the CEO of CtrlZZZ, she supervises all parts of the team’s functions, making sure the project runs smoothly.</p>
+      </div>
+    </div>
+  
+    <div class="team-member">
+      <img src="jasmine.jpg" alt="Jasmine Zheng">
+      <div class="member-text">
+        <h2>Jasmine Zheng - CSE</h2>
+        <p>Jasmine is passionate about neuroscience and psychology, joining CtrlZZZ to further her knowledge on sleep-related neural functions. As the chief sensor engineer of the team, she is in charge of designing the 3D model of the sensor.</p>
+      </div>
+    </div>
+  
+    <div class="team-member">
+      <img src="kevin.jpg" alt="Kevin Chen">
+      <div class="member-text">
+        <h2>Kevin Chen - COO</h2>
+        <p>Kevin loves all things STEM, especially physics and chemistry, participating in Science Olympiad and DECA in Texas. As the COO of CtrlZZZ, he oversees sensor prototype production and assembly.</p>
+      </div>
+    </div>
+  
+    <div class="team-member">
+      <img src="ashley.jpg" alt="Ashley Fang">
+      <div class="member-text">
+        <h2>Ashley Fang - CTO</h2>
+        <p>Ashley’s interests lie in computer science, math, and biology, participating in FRC robotics and research in Southern California. As the CTO of CtrlZZZ, she leads app development and website design.</p>
+      </div>
+    </div>
+  
+    <div class="team-member">
+      <img src="aiden.jpg" alt="Aiden Sha">
+      <div class="member-text">
+        <h2>Aiden Sha - CM</h2>
+        <p>Aiden, who is from New York, is interested in computer science and research, participating in summer research projects at SBU. As the CM in CtrlZZZ, he is responsible for overseeing the exact business functions.</p>
+      </div>
+    </div>
+  
   </div>
+  
+  <script>
+    function openMenu() {
+      document.getElementById("side-menu").classList.add("open");
+      document.getElementById("overlay").classList.add("show");
+    }
 
+    function closeMenu() {
+      document.getElementById("side-menu").classList.remove("open");
+      document.getElementById("overlay").classList.remove("show");
+    }
+  </script>
 </body>
 </html>

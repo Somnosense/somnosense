@@ -283,5 +283,11 @@
   .endtext {
     color: #407ce2;
   }
+
+  .picture {
+    max-width: 500px;
+    max-height: 500px;
+
+  }
   
   

@@ -3,17 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homepage</title>
+  <title>Product</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <body>
-        <div class="navbar">
-          <a href="index.html">Home</a>
-          <a href="page1.html">About Us</a>
-          <a href="page2.html">Product</a>
-          <a href="page3.html">Market and Impact</a>
-        </div>
+        <!-- Minimal Menu Button -->
+<header class="header">
+    <button class="menu-button" onclick="openMenu()">
+      <span class="dots">⋮</span>
+      <span class="menu-text">Menu</span>
+    </button>
+  </header>
+  
+  <!-- Side Menu -->
+  <nav id="side-menu" class="side-menu">
+    <div class="side-menu-header">
+      <img src="logo.png" alt="Somnosense logo" class="logo">
+      <button class="close-button" onclick="closeMenu()">×</button>
+    </div>
+  
+    <a href="index.html">Home</a>
+    <a href="page1.html">About Us</a>
+    <a href="page2.html">Product</a>
+    <a href="page3.html">Market and Impact</a>
+  </nav>
+  
+  <!-- Overlay -->
+  <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+  
     <div class="container">
         <h1>Product</h1>
         <div class="product-section">
@@ -33,4 +51,16 @@
     <div class="model-image">
         <img src="model.png" alt="image">
     </div>
+    <script>
+        function openMenu() {
+          document.getElementById("side-menu").classList.add("open");
+          document.getElementById("overlay").classList.add("show");
+        }
+    
+        function closeMenu() {
+          document.getElementById("side-menu").classList.remove("open");
+          document.getElementById("overlay").classList.remove("show");
+        }
+      </script>
 </body>
+</html>
